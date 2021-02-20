@@ -1,0 +1,499 @@
+  50  mkdir google
+   51  cd google/
+   52  mkdir amazon
+   53  cd amazon/
+   54  git init --bare
+   55  cd ..
+   56  git clone amazon
+   57  git clone amazon/ user1
+   58  git clone amazon/ user2
+   59  cd user1/
+   60  touch 123.txt
+   61  git add .
+   62  git status
+   63  git commit -m "first commit from user1"
+   64  git push
+   65  cd ..
+   66  cd user2
+   67  touch 456.txt
+   68  git status
+   69  git add .
+   70  git commit -m "first commit of user2"
+   71  git push
+   72  git fetch
+   73  git status
+   74  git push
+   75  ls
+   76  git pull
+   77  cd ..
+   78  cd user1
+   79  ls
+   80  git pull
+   81  ls
+   82  cd ..
+   83  cd user2
+   84  ls
+   85  touch 777.txt
+   86  git add .
+   87  git status
+   88  git commit -m "secong commit"
+   89  git push
+   90  cd ..
+   91  git clone amazon/ user3
+   92  cd user3
+   93  touch 888.txt
+   94  git status
+   95  git add .
+   96  git status
+   97  git commit -m "1st commit from u3"
+   98  git push
+   99  cd ..
+  100  cd user1
+  101  git pull
+  102  ls
+  103  cd ..
+  104  git clone amazon/ user2
+  105  ls
+  106  cd user2
+  107  rm -rf .git
+  108  ls
+  109  git status
+  110  git init
+  111  git status
+  112  git add .
+  113  git commit -m "3rd commit"
+  114  git push
+  115  git push amazon
+  116  git push --set-upstream amazon master
+  117  cd ..
+  118  cd amazon/
+  119  git init
+  120  cd ..
+  121  cd user2
+  122  git push --set-upstream amazon master
+  123  cd ../user1
+  124  git remote -v
+  125  cd ../user2
+  126  git remote add C:/Users/Apponix/Desktop/google/amazon
+  127  git remote add origin C:/Users/Apponix/Desktop/google/amazon
+  128  git push
+  129  git push --set-upstream origin master
+  130  git pull
+  131  git pull C:/Users/Apponix/Desktop/google/amazon master
+  132  git remote -v
+  133  git branch -M main
+  134  git push
+  135  git push --set-upstream origin main
+  136  git push
+  137  touch 999.txt
+  138  git add .
+  139  git commit -m "4th commit"
+  140  git push
+  141  cd ../user1
+  142  git pull
+  143  ls
+  144  git branch
+  145  git pull main
+  146  git remote -v
+  147  git pull origin main
+  148  ls
+  149  git pull
+  150  ls
+  151  git branch
+  152  git fetch
+  153  git branch
+  154  cd /
+  155  ls
+  156  cd ~
+  157  cd Desktop/
+  158  mkdir apple
+  159  ls
+  160  cd apple/
+  161  mkdir main
+  162  cd main/
+  163  git init --bare
+  164  cd ..
+  165  mkdir u1
+  166  cd u1/
+  167  touch 111.txt
+  168  git add .
+  169  git status
+  170  git clone main/ u2
+  171  cd ..
+  172  ls
+  173  git clone main/ u2
+  174  git clone main/ u3
+  175  cd ..
+  176  cd apple/
+  177  ls
+  178  cd u2/
+  179  touch 111.txt
+  180  git status
+  181  git add .
+  182  git commit -m "1st commit"
+  183  git push
+  184  cd ../u3
+  185  touch.exe 222.txt
+  186  git add .
+  187  git commit -m "1st commit from u3"
+  188  git push
+  189  cd ..
+  190  ls
+  191  git clone main/ u4
+  192  ls
+  193  cd u4
+  194  touch 333.txt
+  195  git status
+  196  git add .
+  197  git commit -m "u4 1st commit"
+  198  git status
+  199  git push
+  200  cd
+  201  ls
+  202  ll
+  203  cd Desktop/
+  204  ls
+  205  ll
+  206  mkdir app-devops
+  207  cd app
+  208  cd ../
+  209  ls
+  210  mkdir apponix-devops
+  211  cd apponix-devops/
+  212  ls
+  213  mkdir golang
+  214  cd golang/
+  215  ls
+  216  git init --bare
+  217  cd ../
+  218  git clone golang/ python
+  219  cd python/
+  220  tee one.txt two.py
+  221  cat one.txt
+  222  cat two.py
+  223  git add .
+  224  git status
+  225  git commit -m "first commit
+  226  git commit -m "first commit"
+  227  git status
+  228  git push
+  229  ls
+  230  cd ../
+  231  ls
+  232  git clone golang/ java
+  233  ll
+  234  cd java/
+  235  ll
+  236  ls
+  237  ll
+  238  touch three.html four.xml
+  239  cd ../
+  240  ls
+  241  cd ../
+  242  ll
+  243  ll
+  244  mkdir rakesh-folder
+  245  cd rakesh
+  246  cd ../
+  247  mkdir rakesh-folder/
+  248  cd rakesh-folder/
+  249  mkdir google
+  250  ls
+  251  cd google/
+  252  git init --bare
+  253  cd ../
+  254  ll
+  255  git clone google/ user1
+  256  ll
+  257  cd ../
+  258  l
+  259  ll
+  260  cd rakesh-folder/
+  261  ls
+  262  ll
+  263  cd user1/
+  264  cd ../google/
+  265  cd ../
+  266  ll
+  267  lll
+  268  ll
+  269  mkdir user2
+  270  ls
+  271  cd user2
+  272  ls
+  273  ls -a
+  274  cd ..
+  275  ls
+  276  ll
+  277  cd user1/
+  278  ll -a
+  279  ls -a
+  280  cd ../
+  281  ls
+  282  cd ../
+  283  ll
+  284  mkdir isro
+  285  cd isro/
+  286  ls
+  287  mkdir nasa
+  288  ls
+  289  cd nasa/
+  290  ls
+  291  git init --bare
+  292  cd ../
+  293  ls
+  294  git clone nasa/ gslv
+  295  ll
+  296  cd gslv/
+  297  ls -a
+  298  ls -ltra
+  299  cd ../
+  300  cd  gslv/
+  301  ls -latrs
+  302  ll
+  303  ls
+  304  tee one.xml two.py three.xml
+  305  git status
+  306  ll
+  307  cat one.xml
+  308  cat three.xml
+  309  cat two.py
+  310  tee four.ps1 ten.xml five.class six.json seven.tf last.yml
+  311  ll
+  312  cat five.class
+  313  cat four.ps1
+  314  ccat last.yml
+  315  cat last.yml
+  316  git status
+  317  git add . && git commit -m "gslv first commit"
+  318  git status
+  319  ll
+  320  git push
+  321  cd ../
+  322  ll
+  323  git clone nasa/ user1
+  324  ll
+  325  cd user1/
+  326  ll
+  327  ls
+  328  ll
+  329  vim one.xml
+  330  git add .
+  331  git commit -m "user1 added 2nd line in one.xml nd only commited to local repo"
+  332  cd ../gslv/
+  333  vim one.xml
+  334  git add .
+  335  git commit -m "gslv added in the 2nd line same content"
+  336  git push
+  337  ll
+  338  cat one.xml
+  339  vim one.xml
+  340  git add .
+  341  git commit -m "gslv added 2nd line"
+  342  git push
+  343  cd ../user1/
+  344  ll
+  345  git status
+  346  git push
+  347  git pull
+  348  ls
+  349  git push
+  350  git merge tool
+  351  git mergetool
+  352  git status
+  353  cat one.xml
+  354  ls
+  355  cat one.xml.orig
+  356  git commit -m "resolved conflict issues"
+  357  git push
+  358  cd ../gslv/
+  359  ls
+  360  cat one.xml
+  361  git pull
+  362  ll
+  363  cat one.xml
+  364  ll
+  365  cat two.py
+  366  vim rakesh.yml
+  367  git status
+  368  git add .
+  369  git status
+  370  git commit -m "i m done with rakesh.yml file from gslv"
+  371  cd ../user1/
+  372  ll
+  373  vim rakesh.yml
+  374  chmod 777 two.py
+  375  ll
+  376  ll
+  377  chmod -R 777 two.py
+  378  ll
+  379  ll
+  380  vim rakesh.yml
+  381  git add .
+  382  git commit -m "user1 added rakesh yml"
+  383  cd ../gslv/
+  384  git push
+  385  cd ../user1/
+  386  ll
+  387  cat rakesh.yml
+  388  git push
+  389  git pull
+  390  cat rakesh.yml
+  391  git mergetool
+  392  git status
+  393  git commit -m "merging resolved for rakesh.yml"
+  394  git push
+  395  ll
+  396  cat rakesh.yml
+  397  cd ../gslv/
+  398  ls
+  399  ll
+  400  cat rakesh.yml
+  401  git pull
+  402  ll
+  403  cat rakesh.yml
+  404  ls
+  405  ll
+  406  cd ..
+  407  ls
+  408  cd ..
+  409  mkdir barepo1
+  410  cd barepo1/
+  411  git init
+  412  rm -rf .git
+  413  ls -a
+  414  mkdir alfa
+  415  cd alfa/
+  416  git init
+  417  rm -rf .git
+  418  git init --bare
+  419  cd ..
+  420  git clone alfa/ u1
+  421  touch python.py
+  422  vim python.py
+  423  vim python.py
+  424  rm python.py
+  425  cd u1/
+  426  touch golang.go
+  427  vim golang.go
+  428  cat golang.go
+  429  vim golang.go
+  430  cd ..
+  431  cd u1/
+  432  git status
+  433  git add .
+  434  git status
+  435  git commit -m "First commit form U1"
+  436  git push
+  437  cd ..
+  438  git clone alfa/ u2
+  439  git pull
+  440  ls
+  441  cd u2
+  442  ls
+  443  vim golang.go
+  444  git status
+  445  git add . && git commit -m "first commit from u2"
+  446  git status
+  447  git push
+  448  vim golang.go
+  449  git add . && git commit -m "second commit from u2"
+  450  cd ..
+  451  cd u1/
+  452  cat golang.go
+  453  git pull
+  454  cat golang.go
+  455  vim golang.go
+  456  git add . && git commit -m "second commit from u1"
+  457  git push
+  458  cd ..
+  459  cd u2/
+  460  git push
+  461  git mergetool
+  462  git pull
+  463  git mergetool
+  464  git push
+  465  git pull
+  466  git add . && git commit -m "final commit"
+  467  git push
+  468  cat golang.go
+  469  cd ..
+  470  cd u1/
+  471  git pull
+  472  cat golang.go
+  473  vim golang.go
+  474  git status
+  475  git stash
+  476  git status
+  477  ls
+  478  cat golang.go
+  479  git stash list
+  480  git stash apply 0
+  481  git status
+  482  cat golang.go
+  483  git stash --list
+  484  git stash --help
+  485  git stash --help
+  486  vim golang.go
+  487  git stash
+  488  git stash list
+  489  cat golang.go
+  490  git stash pop 0
+  491  git stash list
+  492  cat golang.go
+  493  git add . && git commit -m "commit #4"
+  494  git log --oneline
+  495  git revert bf01ccb
+  496  git status
+  497  cat golang.go
+  498  git log --oneline
+  499  git revert 4f34683
+  500  cat golang.go
+  501  ls
+  502  cd Desktop/
+  503  ls
+  504  mkdir public-reop
+  505  cd public-reop/
+  506  ls
+  507  pwd
+  508  te rakesh.ps1 prabin.yml manju.py
+  509  tee rakesh.ps1 prabin.yml manju.py
+  510  git
+  511  git status
+  512  ls
+  513  git init
+  514  ls
+  515  git status
+  516  git add .
+  517  git status
+  518  git commit -m "new files from 1st commit -"
+  519  ls
+  520  git status
+  521  git push
+  522  ls
+  523  git branch -M main
+  524  git remote add origin https://github.com/codepipe/demo1-dev-1.git
+  525  git push -u origin main
+  526  ls
+  527  git remote -v
+  528  mkdir rakesh
+  529  cd rakesh
+  530  ls
+  531  tee main.tf config.yml
+  532  git status
+  533  git add .
+  534  git add .
+  535  git status
+  536  cd ../
+  537  git status
+  538  git commit -m "new folder created"
+  539  git puh
+  540  git push
+  541  git rempote -v
+  542  git remote -v
+  543  git remote -v
+  544  git remote set-url origin https://github.com/codepipe/demo2.git
+  545  git remote -v
+  546  git push -u origin main
+  547  git fetch
+  548  history
